@@ -1,0 +1,6 @@
+CommonLibSSE-NG v12.2.0
+Repository: https://github.com/alandtse/CommonLibSSE-NG
+Commit: 67b201b6fe45241ac5c1e4630ecf847523775b66
+Source: https://github.com/alandtse/CommonLibSSE-NG/archive/refs/tags/v12.2.0.zip
+SHA256: 558bf3b441174825ac5cab93b0ac48ad4df8c9bb46cd2cb531cfc424b79d1199
+GPL-3.0-or-later with the bundled Modding Exception. Statically linked into CloudWalk.dll.

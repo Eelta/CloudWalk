@@ -1,0 +1,10 @@
+build*/
+release/
+dist/
+dependencies/
+qa/
+tests/
+backups/
+__pycache__/
+*.log
+*.pdb

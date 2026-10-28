@@ -1,0 +1,76 @@
+{
+  "commonLibRepository": "https://github.com/alandtse/CommonLibSSE-NG.git",
+  "commonLibCommit": "67b201b6fe45241ac5c1e4630ecf847523775b66",
+  "commonLibStaticLibrarySha256": "5779e6bac37bf76426a65a101756d8b7a40ad830c9c10d2306e37c49f341cf08",
+  "triplet": "x64-windows-static-md",
+  "compiler": "MSVC 19.51 / Visual Studio 2026 18.8.2",
+  "windowsSdk": "10.0.26100.0",
+  "cxx": "23",
+  "runtime": "/MD",
+  "packages": [
+    {
+      "package": "vcpkg-cmake",
+      "sha256": "e25bce27d1802447232c77073c9cc2e04bcf9aa19716bdd5aa0b23fb7527d498",
+      "control": "Package: vcpkg-cmake\nVersion: 2025-08-07\nArchitecture: x64-windows\nMulti-Arch: same\nAbi: 3f004754a1fb5c062cfbeca27b0d052f11e89f5f923702fa6df8e320c72ccdc8\n"
+    },
+    {
+      "package": "directxtk",
+      "sha256": "01785ba3f2e00dad2569116d6bd59a8dc27f2ef3f11096c7311e2d1c604310b8",
+      "control": "Package: directxtk\nVersion: 2026-05-07\nPort-Version: 1\nDepends: directxmath, vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nAbi: 48f3427b3d9543d7ab7787d820585bb88b3a1d53c5c5edb60dfd37fb78c9c65a\nDescription: A collection of helper classes for writing DirectX 11.x code in C++.\n"
+    },
+    {
+      "package": "directxmath",
+      "sha256": "febdc2ca9105fd930bcee73143dacbdfe8431c0c81572509623dc809a21784b6",
+      "control": "Package: directxmath\nVersion: 2026-06-12\nDepends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nAbi: 65496c124371d1a093172a672ea202ef97cd2e8a44b76a80c2cc408117309e4a\nDescription: DirectXMath SIMD C++ math library\n"
+    },
+    {
+      "package": "fmt",
+      "sha256": "d813cf6b2c294ab9523c7cb00016d77a7b351d137baa70c77504f1afb0d2084c",
+      "control": "Package: fmt\nVersion: 12.2.0\nPort-Version: 1\nDepends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nAbi: 68ce203d07cb74504d8e0166996973c30f726bfc6e6a7b54488c40fd9c83b75e\nDescription: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.\n"
+    },
+    {
+      "package": "spdlog",
+      "sha256": "45b266117b4b4e74569be0c69f2ffaeeb731e2ede6baacddc9fe4138bcae143e",
+      "control": "Package: spdlog\nVersion: 1.17.0\nPort-Version: 1\nDepends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nAbi: 870713919fd2dfda3bb65d034677d82d08a4c7777db265aeef70a2df54c3f772\nDescription: Very fast, header-only/compiled, C++ logging library.\nDefault-Features: fmt, tz-offset\n\nPackage: spdlog\nFeature: fmt\nDepends: fmt\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nDescription: Use fmt library\n\nPackage: spdlog\nFeature: tz-offset\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nDescription: Omit %z timezone offset (use on platforms without tm_gmtoff)\n"
+    },
+    {
+      "package": "rapidcsv",
+      "sha256": "d6f50a066f304f3ff2738ddf19ba06cb18917623849c2e7ebb59f69bf167860e",
+      "control": "Package: rapidcsv\nVersion: 9.07\nDepends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows\nArchitecture: x64-windows-static-md\nMulti-Arch: same\nAbi: cd2ee2ca276e3494b89814e24befaa7a5d09a0f19dabd3ad294bc74d58002718\nDescription: Rapidcsv is a C++ header-only library for CSV parsing.\n"
+    },
+    {
+      "package": "vcpkg-cmake-config",
+      "sha256": "9695ee8772a9632b6829c1e20e30e4448d63b98a2beedb885fc9c6c48a5de4e9",
+      "control": "Package: vcpkg-cmake-config\nVersion: 2026-07-21\nArchitecture: x64-windows\nMulti-Arch: same\nAbi: ed91d4f6c540c8e8ee9a92b60306994568366bc10b568aac46c5ec593d1bd27a\n"
+    }
+  ],
+  "note": "CommonLibSSE-NG v12.2.0 built from locked upstream source; SE+AE enabled, VR disabled. 14 target runtimes checked offline with format 1/2/5 databases. FreeClimb consulted for runtime list, translation/menu organization and controller input/capture/ownership design. CloudWalk controller implementation authored independently; no FreeClimb source copied.",
+  "version": "0.5.7",
+  "commonLibSourceArchiveSha256": "558bf3b441174825ac5cab93b0ac48ad4df8c9bb46cd2cb531cfc424b79d1199",
+  "commonLibBuiltFromSource": true,
+  "compileOptions": {
+    "ENABLE_SKYRIM_SE": true,
+    "ENABLE_SKYRIM_AE": true,
+    "ENABLE_SKYRIM_VR": false,
+    "SKSE_SUPPORT_XBYAK": false,
+    "SKSE_SUPPORT_PATCH_SAFETY": false,
+    "COMMONLIB_ENABLE_IPO": false
+  },
+  "commonLibTag": "v12.2.0",
+  "runtimeVersions": [
+    "1.5.97.0",
+    "1.6.317.0",
+    "1.6.318.0",
+    "1.6.323.0",
+    "1.6.342.0",
+    "1.6.353.0",
+    "1.6.629.0",
+    "1.6.640.0",
+    "1.6.659.0",
+    "1.6.1130.0",
+    "1.6.1170.0",
+    "1.6.1179.0",
+    "1.7.99.0",
+    "1.7.104.0"
+  ]
+}

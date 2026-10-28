@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CloudWalk</title><link rel="stylesheet" href="player.css"></head>
+<body><main class="walkman" aria-label="随声听">
+<header id="dragHandle"><div class="cassette" aria-hidden="true"><div class="tape-top"><span>CW · STEREO</span><span>A</span></div><div class="tape-window"><span class="reel left"></span><span class="tape-line"></span><span class="reel right"></span></div><div class="tape-base"></div></div><span id="status" class="dot" aria-label="未连接"></span><div class="track"><h1 id="title">网易云音乐</h1><p id="artist">未连接</p></div><button id="close" class="icon close" aria-label="关闭窗口"><svg viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17"/></svg></button></header>
+<div class="controls"><button id="previous" class="icon" aria-label="上一首" disabled><svg viewBox="0 0 24 24"><path d="M6 6v12"/><path class="fill" d="m18 6-9 6 9 6Z"/></svg></button>
+<button id="toggle" class="power" aria-label="开启随声听" aria-pressed="false"><svg id="playIcon" viewBox="0 0 24 24"><path class="fill" d="m9 6 10 6-10 6Z"/></svg><svg id="pauseIcon" viewBox="0 0 24 24" style="display:none"><path d="M9 6v12M15 6v12" stroke-width="3"/></svg></button>
+<button id="next" class="icon" aria-label="下一首" disabled><svg viewBox="0 0 24 24"><path d="M18 6v12"/><path class="fill" d="m6 6 9 6-9 6Z"/></svg></button>
+<span class="spacer"></span><svg class="volume-icon" viewBox="0 0 24 24"><path d="m11 5-5 4H3v6h3l5 4ZM15 8c3 2 3 6 0 8"/></svg><input id="volume" type="range" min="0" max="1" value="1" step="0.01" aria-label="网易云音量" disabled></div>
+<p id="playerError" class="error" role="status" hidden></p>
+</main>
+<section id="radioWheel" aria-label="电台轮盘" hidden>
+ <div id="wheelAnchor" class="wheel-anchor"><div class="wheel-card"><svg id="stations" viewBox="0 0 600 600" aria-label="选择电台"></svg></div></div>
+</section><script src="player.js"></script></body></html>
